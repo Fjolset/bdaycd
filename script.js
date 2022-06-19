@@ -19,11 +19,11 @@ const hoursElc = document.getElementById('hoursc')
 const minsElc = document.getElementById('minsc')
 
 
-const alex = '13 Oct 2021';
-const birgitte = '6 Aug 2021';
-const lucas = '28 Aug 2021';
-const fie = '4 Feb 2021';
-const christian = '16 Dec 2020';
+const alex = '13 Oct 2022';
+const birgitte = '6 Aug 2022';
+const lucas = '28 Aug 2022';
+const fie = '4 Feb 2023';
+const christian = '16 Dec 2022';
 
 
 function countdown(){
