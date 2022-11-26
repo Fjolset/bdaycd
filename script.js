@@ -18,10 +18,10 @@ const daysElc = document.getElementById('daysc')
 const hoursElc = document.getElementById('hoursc')
 const minsElc = document.getElementById('minsc')
 
-
-const alex = '13 Oct 2022';
-const birgitte = '6 Aug 2022';
-const lucas = '28 Aug 2022';
+//Skift årstal her efter deres fødselsdag er holdt. Tihi fnis
+const alex = '13 Oct 2023';
+const birgitte = '6 Aug 2023';
+const lucas = '28 Aug 2023';
 const fie = '4 Feb 2023';
 const christian = '16 Dec 2022';
 
