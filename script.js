@@ -23,7 +23,7 @@ const alex = '13 Oct 2023';
 const birgitte = '6 Aug 2023';
 const lucas = '28 Aug 2023';
 const fie = '4 Feb 2023';
-const christian = '16 Dec 2022';
+const christian = '16 Dec 2023';
 
 
 function countdown(){  
@@ -61,6 +61,15 @@ function countdown(){
     const daysf = Math.floor(secondsf / 3600 / 24);
     const hoursf = Math.floor(secondsf / 3600 % 24);
     const minutesf = Math.floor(secondsf / 60) % 60;
+    
+    // Find the distance between now and Christians bday
+        var distance = DateFie - currentDate;
+        // If the date has been reached, change the year to the next year
+        if (distance < 0) {
+          DateFie.setFullYear(DateFie.getFullYear() + 1);
+          distance = DateFie - currentDate;
+        }
+    
     // Christian
     const DateChristian = new Date(christian);
 
@@ -70,7 +79,7 @@ function countdown(){
     const hoursc = Math.floor(secondsc / 3600 % 24);
     const minutesc = Math.floor(secondsc / 60) % 60;
     
-        // Find the distance between now and the target date
+        // Find the distance between now and Christians bday
         var distance = DateChristian - currentDate;
         // If the date has been reached, change the year to the next year
         if (distance < 0) {
