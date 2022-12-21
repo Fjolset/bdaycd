@@ -70,8 +70,6 @@ function countdown(){
     const hoursc = Math.floor(secondsc / 3600 % 24);
     const minutesc = Math.floor(secondsc / 60) % 60;
     
-     // Get today's date and time
-        var currentDate = new Date();
         // Find the distance between now and the target date
         var distance = DateChristian - currentDate;
         // If the date has been reached, change the year to the next year
