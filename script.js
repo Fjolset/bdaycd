@@ -26,7 +26,8 @@ const fie = '4 Feb 2023';
 const christian = '16 Dec 2022';
 
 
-function countdown(){
+function countdown(){  
+    
     // Alex
     const DateAlex = new Date(alex);
     const currentDate = new Date();
@@ -68,6 +69,16 @@ function countdown(){
     const daysc = Math.floor(secondsc / 3600 / 24);
     const hoursc = Math.floor(secondsc / 3600 % 24);
     const minutesc = Math.floor(secondsc / 60) % 60;
+    
+     // Get today's date and time
+        var currentDate = new Date();
+        // Find the distance between now and the target date
+        var distance = DateChristian - currentDate;
+        // If the date has been reached, change the year to the next year
+        if (distance < 0) {
+          DateChristian.setFullYear(DateChristian.getFullYear() + 1);
+          distance = DateChristian - currentDate;
+        }
 
     console.log("Alex: " + daysa, hoursa, minutesa);
     console.log("Birgitte: " + daysb, hoursb, minutesb);
