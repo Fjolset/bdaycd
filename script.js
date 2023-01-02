@@ -37,6 +37,15 @@ function countdown(){
     const daysa = Math.floor(secondsa / 3600 / 24);
     const hoursa = Math.floor(secondsa / 3600 % 24);
     const minutesa = Math.floor(secondsa / 60) % 60;
+    
+    // Find the distance between now and Birgitte bday
+        var distance = DateAlex - currentDate;
+        // If the date has been reached, change the year to the next year
+        if (distance < 0) {
+          DateAlex.setFullYear(DateAlex.getFullYear() + 1);
+          distance = DateAlex - currentDate;
+        }
+    
     // Birgitte
     const DateBirgitte = new Date(birgitte);
 
@@ -45,6 +54,15 @@ function countdown(){
     const daysb = Math.floor(secondsb / 3600 / 24);
     const hoursb = Math.floor(secondsb / 3600 % 24);
     const minutesb = Math.floor(secondsb / 60) % 60;
+    
+     // Find the distance between now and Birgitte bday
+        var distance = DateBirgitte - currentDate;
+        // If the date has been reached, change the year to the next year
+        if (distance < 0) {
+          DateBirgitte.setFullYear(DateBirgitte.getFullYear() + 1);
+          distance = DateBirgitte - currentDate;
+        }
+    
     // Lucas
     const DateLucas = new Date(lucas);
 
@@ -53,6 +71,14 @@ function countdown(){
     const daysl = Math.floor(secondsl / 3600 / 24);
     const hoursl = Math.floor(secondsl / 3600 % 24);
     const minutesl = Math.floor(secondsl / 60) % 60;
+    
+    // Find the distance between now and Lucas bday
+        var distance = DateLucas - currentDate;
+        // If the date has been reached, change the year to the next year
+        if (distance < 0) {
+          DateLucas.setFullYear(DateLucas.getFullYear() + 1);
+          distance = DateLucas - currentDate;
+        }
     // Fie
     const DateFie = new Date(fie);
 
@@ -62,7 +88,7 @@ function countdown(){
     const hoursf = Math.floor(secondsf / 3600 % 24);
     const minutesf = Math.floor(secondsf / 60) % 60;
     
-    // Find the distance between now and Christians bday
+    // Find the distance between now and Fie bday
         var distance = DateFie - currentDate;
         // If the date has been reached, change the year to the next year
         if (distance < 0) {
